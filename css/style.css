@@ -173,11 +173,11 @@ footer {
 }
 @media screen and (min-width: 1280px) {
   .container{
-    max-width: 1200px;
+    max-width: 1280px;
     margin: auto;
   }
   .todo-list {
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-column-gap: 3rem;
   }
 }
