@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap");
+
+:root {
+    --primary: #f0f1f3;
+    --secondary: #ffd43b;
+    --card: #ffffff;
+    --title: #183153;
+    --text: #616d8a;
+    --hover: #f0f1f3;
+    --base: 1.6rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: var(--primary);
+    width: 100vw;
+    min-height: 100vh;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--title);
+}
+p {
+    color: var(--text);
+}
+.hidden {
+    display: none;
+}

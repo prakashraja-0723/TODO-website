@@ -1,0 +1,150 @@
+header {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  border-bottom: 5px solid var(--secondary);
+}
+header h1 {
+  width: fit-content;
+  padding: 0.5rem 3rem 0.5rem 2rem;
+  border-left: 0.5rem solid var(--secondary);
+  background: var(--card);
+}
+
+main {
+  margin: 3rem 0;
+}
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.add-todo-btn {
+  color: var(--title);
+  border-left: 0.5rem solid var(--secondary);
+  background: var(--card);
+}
+.add-btn {
+  background: var(--secondary);
+}
+.back-screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.back-screen form {
+  background: var(--card);
+  width: 50rem;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+.back-screen form .close-btn {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  left: 97%;
+  cursor: pointer;
+  color: var(--title);
+  &:hover {
+    color: var(--text);
+  }
+}
+.back-screen form label {
+  font-weight: 700;
+  font-size: var(--base);
+  padding: 0 0 1rem 0.5rem;
+}
+.back-screen form input {
+  padding: 1.5rem;
+  background: var(--hover);
+  border-radius: 0.5rem;
+  border: none;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.back-screen form .add-btn {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: var(--base);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*main div:nth-of-type(2) p{*/
+
+/*}*/
+.todo-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  place-items: center;
+  grid-row-gap: 4rem;
+  padding: 3rem 1rem;
+}
+.card {
+  position: relative;
+   width: 30rem;
+   height: 20rem;
+   background: var(--card);
+   border-radius: 0.6rem;
+   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  padding: 2rem 1.5rem;
+ }
+.card h1{
+  font-size: 2rem;
+  padding: 1rem;
+  background: var(--primary);
+  border-left: 5px solid var(--secondary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card p{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+footer {
+  text-align: center;
+}
+.task-completed{
+  height: fit-content;
+}
+.task-completed h1{
+  margin-bottom: 4rem;
+}
+.task-completed p{
+  display: none;
+}
+.task-completed .delete-task{
+  cursor: pointer;
+  /*width: 100%;*/
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: var(--secondary);
+  padding: .6rem 1.5rem;
+  border: none;
+  border-radius: 100px;
+  color: var(--title);
+  font-weight: 500;
+}
