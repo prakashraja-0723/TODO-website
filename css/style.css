@@ -148,3 +148,36 @@ footer {
   color: var(--title);
   font-weight: 500;
 }
+@media screen and (min-width: 375px) {
+  .todo-list {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .todo-list {
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 3rem;
+  }
+  .card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .todo-list {
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container{
+    max-width: 1200px;
+    margin: auto;
+  }
+  .todo-list {
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 3rem;
+  }
+}
